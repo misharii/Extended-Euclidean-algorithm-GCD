@@ -1,22 +1,31 @@
 def gcd(a,b):
-        x=a
-        y=b
-        r=x%y
-        blr=0 # Before Last Remainder
-        l=[]
-        print("Step 1:")
-        while r != 0:
-            blr=r
-            r=x%y
-            q=x//y
-            print("{0} = {1} x {2} + {3}".format(x,q,y,r))
-            x=y
-            y=r
-        print("GCD is {0}".format(blr))
+        quotients =[]
+        dividers =[]
+        remainders =[]
+        y=[]
+        print("Step 1:  Euclidean algorithm to find gcd({0},{1}):".format(a, b))
+        while b != 0:
+            quotients.append(a//b)
+            dividers.append(a)
+            remainders.append(a%b)
+            y.append(b)
+            temp  = a
+            a=b
+            b=temp%a
+
         print("=========================")
-        print("=== working backwards ===")
-        for i in range :
-            blr =
+        for i in range (len(dividers)) :
+            print("{0} = {1} x {2} + {3}".format(dividers[i],quotients[i] , y[i], remainders[i]))
+
+        print("GCD is {0}".format(remainders[-2]))
+
+        # print("=== working backwards ===")
+        # for j in range (len(dividers)):
+
+
+
+
+
 
 
 
