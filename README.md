@@ -11,7 +11,7 @@ gcd(6, 14) = 2, and 2 = **(−2)** ⋅ 6 + **(1)** ⋅ 14
 
 =============================================================
 
-Here's a explanation of what the code does:
+Here's a explanation of what the code does(right now):
 
 1.	The function gcd takes two integer parameters a and b.
 2.	It initializes four lists: quotients, dividers, remainders, and y.
